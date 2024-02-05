@@ -1,6 +1,5 @@
 .buttons {
-    display: flex;
-    margin-left: 5px;
+      margin-left: 5px;
     color: hsl(216, 71%, 48%);
     border: none;
     transition: 1s;
@@ -17,7 +16,7 @@
     color: cadetblue;
   }
   
-  @media (max-width: 400px) {
+  @media (max-width: 450px) {
     .buttons {
       display: block;
       justify-content: center;
