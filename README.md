@@ -1,10 +1,10 @@
-# Tasks list - in react.js
+# Tasks list - in react.js 📋
 
 ### **Tasks list for forgetful ones  😉**
 
 ### **[Tasks list - link](https://kacperpilarski2000.github.io/my-project/)**
 
-# Visual site 
+# Page appearance 💅🏻
 ### **normal size**
 <img width="544" height="200" alt="obraz" src="https://github.com/KacperPilarski2000/my-project/assets/149115548/7ce6a4b0-0577-4788-abf9-b046096ac793">
 
