@@ -1,0 +1,8 @@
+.main {
+    font-family: "lato", sans-serif;
+    background-color: hsl(60, 6%, 75%);
+    margin: 0 auto;
+    height: 1000%;
+    padding: 10px;
+    min-width: 360px;
+  }

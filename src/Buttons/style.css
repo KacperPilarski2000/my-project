@@ -1,0 +1,27 @@
+.buttons {
+    display: flex;
+    margin-left: 5px;
+    color: hsl(216, 71%, 48%);
+    border: none;
+    transition: 1s;
+    cursor: pointer;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+  }
+  
+  .buttons:hover {
+    color: hsl(216, 66%, 35%);
+  }
+  
+  .buttons:disabled {
+    color: cadetblue;
+  }
+  
+  @media (max-width: 400px) {
+    .buttons {
+      display: block;
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
+  
