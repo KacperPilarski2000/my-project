@@ -2,7 +2,7 @@
 
 ### **Tasks list for forgetful ones  😉**
 
-### **[Tasks list - link]( https://kacperpilarski2000.github.io/my-project/)**
+### **[Tasks list - link](https://kacperpilarski2000.github.io/my-project/)**
 
 # Getting Started with Create React App
 
