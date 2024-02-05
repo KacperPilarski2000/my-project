@@ -12,9 +12,18 @@
 
 <img width="253" height="400" alt="obraz 2" src="https://github.com/KacperPilarski2000/my-project/assets/149115548/b09d9cfb-f80a-4fd1-b907-e3cf08f68dce">
 
-## how to use 
+## How to use 
 
 in progress...
+
+## Used technologies and programs 
+-**JS**
+-**Css**
+-**React.js**
+-**Git**
+-**Canva**
+-**BEM**
+
 
 # Getting Started with Create React App
 
