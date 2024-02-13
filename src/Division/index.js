@@ -1,6 +1,6 @@
 import "./style.css";
 
-const Division = ({ title, extraContent, content, }) => (
+ const Division = ({ title, extraContent, content, }) => (
 <section className="division">
     <header className="divison__title">
       <b>{title}</b>
@@ -10,4 +10,4 @@ const Division = ({ title, extraContent, content, }) => (
     </section>
 );
 
-export default Division;
+export {Division};

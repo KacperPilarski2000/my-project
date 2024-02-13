@@ -1,15 +1,15 @@
 .buttons {
       margin-left: 5px;
-    color: hsl(216, 71%, 48%);
+    color: hsl(174, 59%, 25%);
     border: none;
     transition: 1s;
     cursor: pointer;
     font-family: "Lato", sans-serif;
-    font-size: 14px;
+    font-size: 18px;
   }
   
   .buttons:hover {
-    color: hsl(216, 66%, 35%);
+    color: hsl(174, 59%, 40%);
   }
   
   .buttons:disabled {

@@ -2,7 +2,7 @@ import "./App.css";
 import Form from "./Form";
 import UnorderedList from "./UnorderedList";
 import Buttons from "./Buttons";
-import Division from "./Division";
+import {Division} from "./Division";
 import Header from "./Header";
 import Main from "./Main";
 import React from "react";

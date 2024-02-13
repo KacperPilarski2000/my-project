@@ -2,8 +2,9 @@ import "./style.css";
 
 const UnorderedList = (props) => (
   <ul className="ListItem__division">
-    {props.tasks.map(task => (
+    {props.tasks.map((task) => (
       <li
+        key={task.id}
         className={`listItem ${
           task.done && props.hideDoneTasks ? "listItem--hidden" : ""
         }`}

@@ -17,6 +17,7 @@
     grid-template-columns: auto 1fr auto;
     align-items: center;
     font-family: "Lato", sans-serif;
+    font-size: 18px;
     padding-bottom: 20px;
     padding-top: 12px;
     border-bottom: 1px solid hsl(0, 1%, 64%);
@@ -26,25 +27,27 @@
   
   .listItem__button {
     background-color: rgb(210, 44, 7);
-    font-size: 12px;
-    min-width: 30px;
-    max-width: 30px;
-    height: 20px;
+    font-size: 11px;
+    height: 26px;
+    width: 26px;
     border: none;
     transition: 1s;
     cursor: pointer;
+    border-radius: 3px;
   }
   .listItem__button:hover {
     background-color: brown;
   }
   .listItem__checkButton {
     background-color: hsl(120, 100%, 25%);
-    height: 20px;
-    width: 22px;
+    height: 26px;
+    width: 26px;
     border: none;
     transition: 1s;
     cursor: pointer;
-    font-size: 12px;
+    font-size: 18px;
+    color: beige;
+
   }
   
   .listItem__checkButton:hover {
