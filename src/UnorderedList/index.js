@@ -19,7 +19,7 @@ const UnorderedList = (props) => (
         >
           {task.content}
         </span>
-        <button className="listItem__button">🗑️</button>
+        <button className="listItem__button" onClick={()=> console.log("Kliknięto w koszyk")}>🗑️</button>
       </li>
     ))}
   </ul>
