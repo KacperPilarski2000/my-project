@@ -1,5 +1,7 @@
 import "./style.css";
 
+const onDelete = () => console.log("Kliknięto w koszyk");
+
 const UnorderedList = (props) => (
   <ul className="ListItem__division">
     {props.tasks.map((task) => (
@@ -19,7 +21,7 @@ const UnorderedList = (props) => (
         >
           {task.content}
         </span>
-        <button className="listItem__button" onClick={()=> console.log("Kliknięto w koszyk")}>🗑️</button>
+        <button className="listItem__button" onClick={onDelete}>🗑️</button>
       </li>
     ))}
   </ul>
