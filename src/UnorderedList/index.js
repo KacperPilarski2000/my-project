@@ -8,7 +8,7 @@ const UnorderedList = (props) => (
       <li
         key={task.id}
         className={`listItem ${
-          task.done && props.hideDoneTasks ? "listItem--hidden" : ""
+          task.done && props.hideDones ? "listItem--hidden" : ""
         }`}
       >
         <button className="listItem__checkButton">

@@ -11,7 +11,7 @@ const tasks = [
   { id: 2, content: "Zrobić sernik", done: true },
 ];
 
-const hideDoneTask = true;
+const hideDone = true;
 
 function App() {
   return (
@@ -21,8 +21,8 @@ function App() {
         <Division title="Dodaj nowe zadanie" content={<Form />} />
         <Division
           title="Lista zadań"
-          extraContent={<Buttons tasks={tasks} hideDoneTask={hideDoneTask} />}
-          content={<UnorderedList tasks={tasks} hideDoneTask={hideDoneTask} />}
+          extraContent={<Buttons tasks={tasks} hideDone={hideDone} />}
+          content={<UnorderedList tasks={tasks} hideDone={hideDone} />}
         />
       </section>
     </Main>
