@@ -6,6 +6,7 @@
     cursor: pointer;
     font-family: "Lato", sans-serif;
     font-size: 18px;
+    background-color:  hsl(0, 0%, 99%);
   }
   
   .buttons:hover {
@@ -16,7 +17,7 @@
     color: cadetblue;
   }
   
-  @media (max-width: 450px) {
+  @media (max-width: 600px) {
     .buttons {
       display: block;
       justify-content: center;
