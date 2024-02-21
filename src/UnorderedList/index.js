@@ -1,17 +1,18 @@
 import "./style.css";
 
-const onDelete = () => console.log("Kliknięto w koszyk");
-
-const UnorderedList = (props) => (
+const UnorderedList = ({ hideDone, removeTasks, tasks, toggleDone }) => (
   <ul className="ListItem__division">
-    {props.tasks.map((task) => (
+    {tasks.map((task) => (
       <li
         key={task.id}
         className={`listItem ${
-          task.done && props.hideDones ? "listItem--hidden" : ""
+          task.done && hideDone ? "listItem--hidden" : ""
         }`}
       >
-        <button className="listItem__checkButton">
+        <button
+          onClick={() => toggleDone(task.id)}
+          className="listItem__checkButton"
+        >
           {task.done ? "✔" : ""}
         </button>
         <span
@@ -21,7 +22,12 @@ const UnorderedList = (props) => (
         >
           {task.content}
         </span>
-        <button className="listItem__button" onClick={onDelete}>🗑️</button>
+        <button
+          className="listItem__button"
+          onClick={() => removeTasks(task.id)}
+        >
+          🗑️
+        </button>
       </li>
     ))}
   </ul>
