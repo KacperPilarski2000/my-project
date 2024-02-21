@@ -2,7 +2,8 @@
     font-family: "lato", sans-serif;
     background-color: hsl(60, 6%, 75%);
     margin: 0 auto;
-    height: 1000%;
+    height: 100%;
     padding: 10px;
-    min-width: 400px;
+    width: 100%;
+    position: absolute;
   }
