@@ -5,15 +5,22 @@ import Buttons from "./Buttons";
 import {Division} from "./Division";
 import Header from "./Header";
 import Main from "./Main";
-import React from "react";
+import React, { useState } from "react";
+
 const tasks = [
   { id: 1, content: "Umyć okna", done: false },
   { id: 2, content: "Zrobić sernik", done: true },
 ];
 
-const hideDone = true;
+
 
 function App() {
+  const [hideDone, setHideDone] = useState(false);
+
+  const toggleHideDone = () => {
+    setHideDone(hideDone => !hideDone);
+  };
+
   return (
     <Main>
       <section className="section">
@@ -21,7 +28,10 @@ function App() {
         <Division title="Dodaj nowe zadanie" content={<Form />} />
         <Division
           title="Lista zadań"
-          extraContent={<Buttons tasks={tasks} hideDone={hideDone} />}
+          extraContent={<Buttons tasks={tasks}
+          hideDone={hideDone}
+          toggleHideDone={toggleHideDone}
+          />}
           content={<UnorderedList tasks={tasks} hideDone={hideDone} />}
         />
       </section>
