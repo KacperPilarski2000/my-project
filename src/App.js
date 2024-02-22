@@ -13,9 +13,21 @@ function App() {
     { id: 1, content: "Umyć okna", done: false },
     { id: 2, content: "Zrobić sernik", done: true },
   ]);
+  
 
   const toggleHideDone = () => {
     setHideDone((hideDone) => !hideDone);
+  };
+
+  const addNewTask = (content) => {
+    setTasks((tasks) => [
+      ...tasks,
+      {
+        content,
+        done: false,
+        id: tasks.length ? tasks[tasks.length - 1].id + 1 : 1,
+      },
+    ]);
   };
 
   const removeTasks = (id) => {
@@ -46,7 +58,7 @@ function App() {
     <Main>
       <section className="section">
         <Header title="Lista zadań" />
-        <Division title="Dodaj nowe zadanie" content={<Form />} />
+        <Division title="Dodaj nowe zadanie" content={<Form addNewTask={addNewTask} />} />
         <Division
           title="Lista zadań"
           content={
